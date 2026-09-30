@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Tells the browser how to render text characters correctly-->
+    <meta charset="UTF-8">
+    <!-- Ensures the website looks correct on both phones and destops -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious_Ukeni</title>
+
+    <!-- Google fots: Links to Outfit (headings) and inter (body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- FontAwesome CDN: Links to library of icons (GitHub, envelope, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Links our HTML file to our styles.css stylesheet-->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. Cursor Glow Element: This will follow our mouse around the screen using JavaScript -->
+     <div class="cursor-glow" id="cursor-glow"></div>
+     <header class="header">
+        <div class="nav-container">
+            <!-- Logo -->
+             <a href="home" class="logo">
+                <span class="logo-accent">&lt;</span>Ukeni<span class="logo-accent">.</span>Precious<span class="logo-accent">/&gt;</span>
+             </a>
+
+             <!-- Navigation Menu Links-->
+              <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link"> Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link nav-cta">Contact Me</a>
+              </nav>
+
+
+              <!-- Mobile Toggle Button (Hamburger bars) -->
+              <button class="mobile-nav-toggle" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+        </div>
+     </header>
+     <main>
+      <!-- Hero Section -->
+       <section id="home" class="hero-section">
+        <div class="hero-grid container">
+
+          <!-- Left Side: Texts, CTAs and Social Icons -->
+           <div class="hero-content fade-in-up">
+            <span class="hero-greeting">Welome to my space</span>
+            <h1 class="hero-title">
+              Crafting <span class="text-radient">Intelligent</span> Systems That Matter
+            </h1>
+            <p class="hero-subtitle">
+              Future-focused engineer specializing in the intersection of AI and hardware. Building toward a career in advanced manufacturing, mechatronics, and autonomous robotics.
+            </p>
+
+            <!-- Call to actions-->
+             <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary"> 
+                View My Work <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Let's Talk
+              </a>
+             </div>
+             <!-- Quick Sociial Connect Icons -->
+              <div class="hero-socials">
+                <span class="social-label">connect:</span>
+                <a href="https://github.com/keni-Senpai" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+
+                <a href="https://www.linkedin.com/in/ukeni-precious-75a404156/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linedin-in"></i></a>
+
+                <a href="mailto:precious.robotics@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+           </div>
+
+           <!-- Right Side: My Picture with Glowing Background -->
+            <div class="hero-image-container fade-in-up delay-200">
+              <div class="avatar-glow"></div>
+              <div class="avatar-frame">
+                <img class="avatar-image" src="Assest/DP.jpeg" alt="DP">
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Animated Mouse Indicator pointing to scroll down -->
+         <div class="scroll-indicator">
+          <a href="#about" aria-label="Scroll Down">
+            <span class="mouse-icon">
+              <span class="wheel"></span>
+            </span>
+          </a>
+         </div>
+       </section>
+       
+
+       <!-- About & Stats Section -->
+        <section id="about" class="about-section section-padding">
+          <div class="container">
+            <div class="section-header text-center fade-in-up">
+              <span class="section-tagline">About Me</span>
+              <h2 class="section-title">Bridging Software and Steel</h2>
+              <div class="section-underline"></div>
+            </div>
+            <div class="about-grid">
+              <!-- Bio Paragraphs -->
+               <div class="about-text-content fade-in-up">
+                <h3>Who I Am</h3>
+                <p class="paragraph">
+                  As a software engineer, I live at the intersection of logic and physical hardware, 
+                  where a line of code has to end in something that actually moves, senses, or decides. 
+                  That pull started early and hasn't let up: from coaching robotics teams to digitizing complex operational workflows 
+                  to co-founding a hardware startup, the throughline is always the same question, how do you turn intelligence into something built?
+                </p>
+                <p class="paragraph">
+                    I care more about foundational thinking than shortcuts. Whether I'm teaching a student their first line of logic or architecting an 
+                  access-control system, I'd rather build systems that are understood from the ground up than something that just works and can't be explained.
+                </p>
+               </div>
+
+               <!-- Visual Stats cards -->
+                <div class="stats-grid fade-in-up delay-200">
+                  <div class="stat-card">
+                  <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <span class="stat">3+</span>
+                  <span class="stat-label">Years of Experience</span>
+                </div>
+
+                <div class="stat-card">
+                  <div class="stat-icon"><i class="fa-solid fa-robot"></i></div>
+                  <span class="stat">2024 WRO Bronze Medal</span>
+                  <span class="stat-label">Coached K-12 team to 1st place in West Africa.</span>
+                </div>
+
+                  <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                    <span class="stat">B.Sc. Software Engineering</span>
+                    <span class="stat-label">Foundational logic, algorithms, and system architecture.</span>
+                  </div>
+
+                <div class="stat-card">
+                  <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+                  <span class="stat">Targeting M.Sc.</span>
+                  <span class="stat-label">Advancing into Robotics & Artificial Intelligence.</span>
+                </div>
+                </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Skills Section -->
+         <section id="skills" class="skills-section section-padding section-b-alt">
+          <div class="container">
+            <div class="section-header text-center fade-in-up">
+              <span class="section-tagline">My Skills</span>
+              <h2 class="section-title">Technologies & Tools</h2>
+              <div class="section-underline"></div>
+            </div>
+
+            <div class="skill-grid">
+              <!-- Language & Logic Card -->
+               <div class="skill-category-card fade-in-up">
+                <h3 class="category-title"><i class="fa-solid fa-code text-gradient-icon"></i>Languages & Logic</h3>
+                <ul class="skill-list">
+                  <li class="skill-item">
+                    <span class="skill-name">Python</span>
+                   <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+
+                  <li class="skill-item">
+                    <span class="skill-name">C / C++</span>
+                   <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+
+                  <li class="skill-item">
+                    <span class="skill-name">JavaScript / HTML / CSS</span>
+                   <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+
+                  <li class="skill-item">
+                    <span class="skill-name">SQL / Databases</span>
+                   <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+                </ul>
+               </div>
+
+               <!-- Robotics & Hardware -->
+                <div class="skill-category-card fade-in-up delay-100">
+                <h3 class="category-title"><i class="fa-solid fa-robot text-gradient-icon"></i>Robotics & Hardware</h3>
+                <ul class="skills-list">
+                  <li class="skill-item">
+                    <span class="skill-name">Arduino / Embedded Systems</span>
+                    <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+
+                  <li class="skill-item">
+                    <span class="skill-name">ROS (Robot Operating System)</span>
+                    <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+
+                  <li class="skill-item">
+                    <span class="skill-name">CAD & 3D Modeling</span>
+                    <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+
+                  <li class="skill-item">
+                    <span class="skill-name">IoT & Sensor Integration</span>
+                    <!-- <span class="skill-level-pill"></span> -->
+                  </li>
+                </ul>
+                </div>
+            </div>
+          </div>
+         </section>
+
+
+         <!-- Projects Section -->
+          <section id="projects" class="projects-section section-padding">
+            <div class="container">
+              <div class="section-header text-center fade-in-up">
+                <span class="section-tagline">My Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-underline"></div>
+              </div>
+
+              <!-- Projects Filter Buttons -->
+               <div class="project-filter fade-in-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+               </div>
+
+              <!-- Project Cards -->
+               <div class="projects-grid fade-in-up">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="robotics">
+                  <div class="project-image"></div>
+                  <div class="project-content">
+                    <h3 class="project-title">Autonomous Robotics System</h3>
+                    <p class="project-description">Led development of autonomous navigation and control systems for WRO competition, resulting in 1st place finish in West Africa.</p>
+                    <div class="project-tags">
+                      <span class="tag">Python</span>
+                      <span class="tag">ROS</span>
+                      <span class="tag">Arduino</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="software">
+                  <div class="project-image"></div>
+                  <div class="project-content">
+                    <h3 class="project-title">Digital Operations Platform</h3>
+                    <p class="project-description">Architected and deployed access control and workflow automation systems for enterprise operations.</p>
+                    <div class="project-tags">
+                      <span class="tag">JavaScript</span>
+                      <span class="tag">Database</span>
+                      <span class="tag">Automation</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </section>
+
+          <!-- Experience Timeline Section -->
+           <section id="experience" class="experience-section section-padding section-bg-alt">
+            <div class="container">
+              <div class="section-header text-center fade-in-up">
+                <span class="section-tagline">My Career Path</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-underline"></div>
+              </div>
+
+              <div class="timeline" id="experience-timeline">
+                <!-- Timeline Item 1 -->
+                 <div class="timeline-item fade-in-up">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2026 - Present</div>
+                  <div class="timeline-content">
+                    <h3 class="role-title">Digital Operation Engineer</h3>
+                    <h4 class="company-name">Geophin Technical</h4>
+                    <p class="role-description">Designing and implementing digital transformation strategies for operational workflows, optimizing system performance and team efficiency through innovative automation solutions.</p>
+                  </div>
+                 </div>
+
+                 <!-- Timeline Item 2 -->
+                 <div class="timeline-item fade-in-up delay-100">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2024 - 2025</div>
+                  <div class="timeline-content">
+                    <h3 class="role-title">Automation Lead Engineer</h3>
+                    <h4 class="company-name">STEM Professionals</h4>
+                    <p class="role-description">Coached and mentored K-12 robotics teams, leading technical strategy and system design that culminated in 2024 WRO Bronze Medal and 1st place finish in West Africa regional competition.</p>
+                  </div>
+                 </div>
+              </div>
+            </div>
+           </section>
+
+          <!-- Contact Section -->
+           <section id="contact" class="contact-section section-padding">
+            <div class="container">
+              <div class="section-header text-center fade-in-up">
+                <span class="section-tagline">Get In Touch</span>
+                <h2 class="section-title">Let's Create Together</h2>
+                <div class="section-underline"></div>
+              </div>
+
+              <div class="contact-grid">
+                <!-- Left Contact Details Panel -->
+                 <div class="contact-info-panel fade-in-up">
+                  <h3>Contact Information</h3>
+                  <p>Have a project in mind or want to say hello? Drop a line and let's make it happen.</p>
+
+                  <div class="info-details">
+                    <div class="info-item">
+                      <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                      <div class="info-text">
+                        <span class="info-title">Email Me</span>
+                        <a href="mailto:precious.robotics@gmail.com">precious.robotics@gmail.com</a>
+                      </div>
+                    </div>
+
+                    <div class="info-item">
+                      <span class="info-icon"><i class="fa-solid fa-map-pin"></i></span>
+                      <div class="info-text">
+                        <span class="info-title">My Location</span>
+                        <span class="info-content">The World</span>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+
+                 <!-- Right Form Panel -->
+                  <div class="contact-form-panel fade-in-up delay- 200">
+                    <form id="contact" class="contact-form" novalidate>
+                      <div class="form-group-row">
+                        <div class="form-group">
+                          <label for="contact-name">Full Name</label>
+                          <div class="input-wrapper">
+                            <i class="fa-solid fa-user input-icon"></i>
+                            <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                          </div>
+                          <span class="error-ms">Please enter your name</span>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <div class="input-wrapper">
+                          <i class="fa-solid fa-envelope input-icon"></i>
+                          <input type="email" id="contact-email" name="email" required placeholder="johndoe@gmail.com">
+                        </div>
+                        <span class="error-msg">Please enter a valid email address</span>
+                      </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <div class="input-wrapper text-area-wrapper">
+                          <i class="fa-solid fa-message input-icon text-area-icon"></i>
+                          <textarea name="message" id="contact-message" rows="5" required placeholder="Tell me about your amazing project details..."></textarea>
+                        </div>
+                        <span class="error-msg">Please write a message</span>
+                      </div>
+                      <button type="submit" class="btn btn-submit" id="contact-submit-btn">
+                        Send Message<i class="fa-solid fa-paper-plane"></i>
+                      </button>
+
+                      <!-- Toast Notification Response Popup -->
+                       <div class="form-toast-response" id="form-toast-response">
+                        <i class="fa-solid fa-circle-check toast-icon"></i>
+                        <div class="toast-content">
+                          <span class="toast-title">Message Sent</span>
+                          <span class="toast-message">Thank you. I will reply to you as soon as possible.</span>
+                        </div>
+                       </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+           </section>
+     </main>
+
+     <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <span class="logo-accent">&lt;</span>Ukeni<span class="logo-accent">.</span>Precious<span class="logo-accent">/&gt;</span>
+            </a>
+            <p>Building intelligent systems that matter | AI × Hardware Engineer</p>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+            <a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+     <!-- Links our HTML file to our script.js logic file -->
+      <script src="script.js"></script>
+</body>
+</html> 
